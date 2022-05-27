@@ -6,8 +6,6 @@ import (
 )
 
 func main(){
-	// Input := []byte("ABC")
-	// reverseString(Input)
 	fmt.Println(reverse(92313))
 }
 

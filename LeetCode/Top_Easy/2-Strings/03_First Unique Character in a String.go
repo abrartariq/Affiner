@@ -5,7 +5,7 @@ import (
 )
 
 func main(){
-	fmt.Println(firstUniqChar("92313"))
+	fmt.Println(firstUniqChar("9231"))
 }
 
     
@@ -21,5 +21,4 @@ func firstUniqChar(s string) int {
         }
     }
     return -1
-}
 }

@@ -5,7 +5,7 @@ import (
 )
 
 func main(){
-	fmt.Println(isAnagram("92313","12393"))
+	fmt.Println(isAnagram("9231","1239"))
 }
 
 func isAnagram(s string, t string) bool {

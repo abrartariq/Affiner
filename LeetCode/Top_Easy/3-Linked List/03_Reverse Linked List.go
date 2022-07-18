@@ -43,12 +43,12 @@ func reverseList(head *ListNode) *ListNode {
 func reverseList(head *ListNode) *ListNode {
     
     // 1 or 0 Case
-    if head.Next == nil || head == nil{
+    if head == nil || head.Next == nil{
     	return head
-	}else{
-		newNode := reverseList(head.Next)
-		newNode.Next = head
 	}
+	newNode := reverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
 
     return newNode
 }

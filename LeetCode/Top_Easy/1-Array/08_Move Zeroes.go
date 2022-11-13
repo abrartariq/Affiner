@@ -9,7 +9,27 @@ func main(){
 	fmt.Println(Input)
 }
 
+// Efficient
+func moveZeros(nums []int){
 
+	fstIter := 0
+	aSize := len(nums)
+
+	for i := 0; i < aSize; i++ {
+		if nums[i] != 0{
+			nums[fstIter] = nums[i]
+			fstIter++
+		}
+	}
+
+	for i := fstIter; i < aSize; i++ {
+		nums[i] = 0
+	}
+
+
+}
+
+// First 
 func moveZeroes(nums []int)  {
 	sizeA := len(nums)
 

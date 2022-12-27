@@ -10,6 +10,7 @@ func main(){
 
 }
 
+// Two Pointer
 func hasCycle(head *ListNode) bool {
     if head == nil{
         return false

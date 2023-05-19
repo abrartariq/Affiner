@@ -22,9 +22,9 @@ func rotate(matrix [][]int) {
 		for j := i; j < sizeA-(i+1); j++ {
 
 			// 1- matrix[i][j]
-			// 4- matrix[j][(sizeA-1)-i]
+			// 2- matrix[j][(sizeA-1)-i]
 			// 3- matrix[(sizeA-1)-i][(sizeA-1)-j]
-			// 2- matrix[(sizeA-1)-j][(sizeA-1)-((sizeA-1)-i)] -> matrix[(sizeA-1)-j][i]
+			// 4- matrix[(sizeA-1)-j][(sizeA-1)-((sizeA-1)-i)] -> matrix[(sizeA-1)-j][i]
 
 			matrix[i][j], matrix[(sizeA-1)-j][i] = matrix[(sizeA-1)-j][i], matrix[i][j]                                         //1 <-> 4
 			matrix[(sizeA-1)-j][i], matrix[(sizeA-1)-i][(sizeA-1)-j] = matrix[(sizeA-1)-i][(sizeA-1)-j], matrix[(sizeA-1)-j][i] //4 <-> 3
